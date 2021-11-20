@@ -10,15 +10,10 @@ public class TransferPage {
     public SelenideElement cardFromInput = $("[data-test-id=from] input");
     public SelenideElement buttonTransferAction = $("[data-test-id=action-transfer]");
 
-    public void transferFromSecondToFirst(DataHelper.CardsInfo info, int transfer) {
+    public void transferFrom(DataHelper.CardsInfo info, int transfer) {
         amountInput.setValue(String.valueOf(transfer));
         cardFromInput.setValue(info.getNumberOfCard());
         buttonTransferAction.click();
     }
 
-    public void transferFromFirstToSecond(DataHelper.CardsInfo info, int transfer) {
-        amountInput.setValue(String.valueOf(transfer));
-        cardFromInput.setValue(info.getNumberOfCard());
-        buttonTransferAction.click();
-    }
 }

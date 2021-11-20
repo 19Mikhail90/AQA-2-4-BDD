@@ -33,7 +33,7 @@ public class MoneyTransferTestPositive {
 
         val transferPage = dahsboardPage.replenishBalanceFirsCard();
         val transferFrom2To1Card = DataHelper.getSecondCardInfo();
-        transferPage.transferFromSecondToFirst(transferFrom2To1Card, transfer);
+        transferPage.transferFrom(transferFrom2To1Card, transfer);
         val balanceFirstCard = DataHelper.getBalanceCardPlus(startBalanceOfFirstCard, transfer);
         val balanceSecondCard = DataHelper.getBalanceCardMinus(startBalanceOfSecondCard, transfer);
 
@@ -51,7 +51,7 @@ public class MoneyTransferTestPositive {
 
         val transferPage = dahsboardPage.replenishBalanceSecondCard();
         val transferFrom1To2Card = DataHelper.getFirstCardInfo();
-        transferPage.transferFromFirstToSecond(transferFrom1To2Card, transfer);
+        transferPage.transferFrom(transferFrom1To2Card, transfer);
         val balanceFirstCardAfterTrans = DataHelper.getBalanceCardMinus(startBalanceOfFirstCard, transfer);
         val balanceSecondCardAfterTrans = DataHelper.getBalanceCardPlus(startBalanceOfSecondCard, transfer);
 
@@ -69,7 +69,7 @@ public class MoneyTransferTestPositive {
         val transferPage = dahsboardPage.replenishBalanceSecondCard();
         val transferFrom1To2Card = DataHelper.getFirstCardInfo();
         int transfer = -1000;
-        transferPage.transferFromFirstToSecond(transferFrom1To2Card, transfer);
+        transferPage.transferFrom(transferFrom1To2Card, transfer);
         val balanceFirstCardAfterTrans = startBalanceOfFirstCard + transfer;
         val balanceSecondCardAfterTrans = startBalanceOfSecondCard - transfer;
 
