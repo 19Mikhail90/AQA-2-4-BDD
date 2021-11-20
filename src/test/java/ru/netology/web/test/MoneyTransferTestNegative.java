@@ -26,18 +26,19 @@ public class MoneyTransferTestNegative {
         val verificationCode = DataHelper.getVerificationCode();
         verificationPage.validVerify((DataHelper.VerificationCode) verificationCode);
 
-        val dahsboardPage = new DashboardPage();
-        int startBalanceOfFirstCard = dahsboardPage.getBalanceOfFirstCard();
-        int startBalanceOfSecondCard = dahsboardPage.getBalanceOfSecondCard();
+        val dashboardPage = new DashboardPage();
+        val startBalanceOfFirstCard = dashboardPage.getBalanceOfFirstCard();
+        val startBalanceOfSecondCard = dashboardPage.getBalanceOfSecondCard();
 
-        val transferPage = dahsboardPage.replenishBalanceSecondCard();
+        val transferPage = dashboardPage.replenishBalanceSecondCard();
         val transferFrom1To2Card = DataHelper.getFirstCardInfo();
-        int transfer = 20001;
+        val transfer = 10022;
         transferPage.transferFrom(transferFrom1To2Card, transfer);
         val balanceFirstCardAfterTrans = DataHelper.getBalanceCardMinus(startBalanceOfFirstCard, transfer);
         val balanceSecondCardAfterTrans = DataHelper.getBalanceCardPlus(startBalanceOfSecondCard, transfer);
 
-        assertEquals(balanceFirstCardAfterTrans, dahsboardPage.getBalanceOfFirstCard());
-        assertEquals(balanceSecondCardAfterTrans, dahsboardPage.getBalanceOfSecondCard());
+        assertEquals(balanceFirstCardAfterTrans, dashboardPage.getBalanceOfFirstCard());
+
+        assertEquals(dashboardPage.getBalanceOfSecondCard(), balanceSecondCardAfterTrans);
     }
 }

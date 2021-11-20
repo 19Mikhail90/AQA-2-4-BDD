@@ -28,8 +28,8 @@ public class MoneyTransferTestPositive {
     void shouldTransferMoneyFromSecondToFirst(int transfer) {
 
         val dahsboardPage = new DashboardPage();
-        int startBalanceOfFirstCard = dahsboardPage.getBalanceOfFirstCard();
-        int startBalanceOfSecondCard = dahsboardPage.getBalanceOfSecondCard();
+        val startBalanceOfFirstCard = dahsboardPage.getBalanceOfFirstCard();
+        val startBalanceOfSecondCard = dahsboardPage.getBalanceOfSecondCard();
 
         val transferPage = dahsboardPage.replenishBalanceFirsCard();
         val transferFrom2To1Card = DataHelper.getSecondCardInfo();
@@ -46,8 +46,8 @@ public class MoneyTransferTestPositive {
     void shouldTransferMoneyFromFirstToSecond(int transfer) {
 
         val dahsboardPage = new DashboardPage();
-        int startBalanceOfFirstCard = dahsboardPage.getBalanceOfFirstCard();
-        int startBalanceOfSecondCard = dahsboardPage.getBalanceOfSecondCard();
+        val startBalanceOfFirstCard = dahsboardPage.getBalanceOfFirstCard();
+        val startBalanceOfSecondCard = dahsboardPage.getBalanceOfSecondCard();
 
         val transferPage = dahsboardPage.replenishBalanceSecondCard();
         val transferFrom1To2Card = DataHelper.getFirstCardInfo();
@@ -63,12 +63,12 @@ public class MoneyTransferTestPositive {
     void shouldTransferMoneyFromFirstToSecondMinus() {
 
         val dahsboardPage = new DashboardPage();
-        int startBalanceOfFirstCard = dahsboardPage.getBalanceOfFirstCard();
-        int startBalanceOfSecondCard = dahsboardPage.getBalanceOfSecondCard();
+        val startBalanceOfFirstCard = dahsboardPage.getBalanceOfFirstCard();
+        val startBalanceOfSecondCard = dahsboardPage.getBalanceOfSecondCard();
 
         val transferPage = dahsboardPage.replenishBalanceSecondCard();
         val transferFrom1To2Card = DataHelper.getFirstCardInfo();
-        int transfer = -1000;
+        val transfer = -1000;
         transferPage.transferFrom(transferFrom1To2Card, transfer);
         val balanceFirstCardAfterTrans = startBalanceOfFirstCard + transfer;
         val balanceSecondCardAfterTrans = startBalanceOfSecondCard - transfer;

@@ -1,0 +1,41 @@
+[33mcommit 4e662ec9fcaef8638ff1fbf58609a94d2fe15ee6[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: 19Mikhail90 <87079131+19Mikhail90@users.noreply.github.com>
+Date:   Sat Nov 20 17:28:45 2021 +0900
+
+    Delete LoginPageV1.java
+
+[33mcommit 61903454de6dee05d9090aff5536b651889aabdb[m
+Author: 19Mikhail90 <87079131+19Mikhail90@users.noreply.github.com>
+Date:   Sat Nov 20 17:28:36 2021 +0900
+
+    Delete LoginPageV3.java
+
+[33mcommit 2f0ce08cf587cb24901ee6b5c8e861de0a133eb9[m
+Author: 19Mikhail90 <87079131+19Mikhail90@users.noreply.github.com>
+Date:   Sat Nov 20 17:28:26 2021 +0900
+
+    Delete CardReplenishmentPage.java
+
+[33mcommit a1604137064cf74a08265e9c12fb94fca9c8fb24[m
+Author: Mikhail Gozhenko <sacred9900@gmail.com>
+Date:   Wed Nov 17 09:28:15 2021 +0500
+
+    added files
+
+[33mcommit 7159e039ad1367af13f913cf564a7e528fbacc6e[m
+Author: Mikhail Gozhenko <sacred9900@gmail.com>
+Date:   Sun Nov 14 20:20:17 2021 +0500
+
+    change tests, added negativ tests
+
+[33mcommit 557e1da42339e6e8c56fafe188221a87f8742139[m
+Author: Mikhail Gozhenko <sacred9900@gmail.com>
+Date:   Thu Nov 11 23:23:42 2021 +0500
+
+    added test object
+
+[33mcommit 6ed4c04d2729021a9012dd8e6f9e10a2df02b0b9[m
+Author: Mikhail Gozhenko <sacred9900@gmail.com>
+Date:   Thu Nov 11 22:03:38 2021 +0500
+
+    initial
